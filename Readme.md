@@ -37,3 +37,12 @@ Here are some goals:
     - `cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug`
     - `cmake --build .`
 6. Test
+
+Note: conan-centre may not have the latest build of GTest for the compiler that
+you are using. Thus, you can rebuild GTest with Conan using the compiler you
+have on your system. Here is an example for g++ v9.3.
+
+```bash
+conan install .. -s compiler.version=9.3 --build=missing`
+```
+
