@@ -1,0 +1,11 @@
+# Files and folders to be ignored by Git
+
+# Track these folders, but not their content
+build/**
+bin/**
+# data/**
+
+# Always exclude these files
+*.zip
+*.tgz
+*.tar
